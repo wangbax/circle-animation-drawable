@@ -30,7 +30,7 @@ a simple sample with drawable
     }
 ```
 ## 实现效果
-![效果](./gif/20170118104232.gif)
+![效果](./gif/20170118112352.png)
 
 ## View源码
 ```java
