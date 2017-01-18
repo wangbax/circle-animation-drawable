@@ -1,39 +1,5 @@
-# CircleAnimationDrawable
-a simple sample with drawable
+package com.example.iwyatt.circleanimationdrawable.widgets;
 
-## 简介
- 受这篇博客[#Android# 轮子杂评](https://zhuanlan.zhihu.com/p/23967243?refer=kotandroid)启发，重写了之前写的这个空间实现这个效果。[Github链接](https://github.com/wt1098078873/CircleAnimationDrawable) 在此。
-## 用法
-### step1
-```java
-    mAnimationDrawable = new CircleAnimationDrawable(200);
-    img.setImageDrawable(mAnimationDrawable);
-```
-### step2
-```java
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (null != mAnimationDrawable) {
-            mAnimationDrawable.start();
-        }
-    }
-```
-### step3
-```java
-    @Override
-    protected void onPause() {
-        super.onPause();
-        if (null != mAnimationDrawable) {
-            mAnimationDrawable.stop();
-        }
-    }
-```
-## 实现效果
-![效果](./gif/20170118104232.gif)
-
-## View源码
-```java
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
@@ -177,7 +143,3 @@ public class CircleAnimationDrawable extends Drawable implements Animatable, Run
         return (int) (2 * mRadius);
     }
 }
-```
-
-## 声明
-[LICENSE](LICENSE)
