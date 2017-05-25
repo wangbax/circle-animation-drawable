@@ -62,7 +62,6 @@ public class CircleAnimationDrawable extends Drawable implements Animatable, Run
             curPercent = (AnimationUtils.currentAnimationTimeMillis() - startTicks) / loopMillis;
             while (curPercent > 1) {
                 curPercent--;
-                startTicks += loopMillis;
             }
         }
 
